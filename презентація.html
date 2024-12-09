@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наслідки Першої світової війни</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #fff;
+            text-shadow: 1px 1px 5px #000;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            font-size: 2rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 1rem;
+            background-color: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+        nav a {
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #6a5acd;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        nav a:hover {
+            background-color: #483d8b;
+            transform: scale(1.1);
+        }
+        .content {
+            display: none;
+            padding: 6rem 2rem 2rem;
+            text-align: center;
+            animation: fadeIn 0.7s;
+        }
+        .content.active {
+            display: block;
+        }
+        img {
+            max-width: 80%;
+            height: auto;
+            margin-top: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .section {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Наслідки Першої світової війни
+    </header>
+    <nav>
+        <a onclick="showPage('page1')">Німеччина</a>
+        <a onclick="showPage('page2')">Революція</a>
+        <a onclick="showPage('page3')">Версальський договір</a>
+        <a onclick="showPage('page4')">Нацизм</a>
+        <a onclick="showPage('page5')">Світ після війни</a>
+    </nav>
+
+    <div id="page1" class="content active">
+        <div class="section">
+            <img src="germany.jpg" alt="Зображення Німеччини після Першої світової війни">
+            <h2>Наслідки для Німеччини</h2>
+            <p>
+                Німеччина після Першої світової війни опинилася у глибокій економічній та політичній кризі. 
+                Версальський договір наклав величезні репарації, що призвело до гіперінфляції. Населення 
+                було розчароване владою і шукало нових лідерів, які б могли повернути країну до її колишньої величі.
+            </p>
+            <p>
+                Крім того, було обмежено армію Німеччини до 100 тисяч солдатів, а також заборонено мати важке озброєння.
+            </p>
+        </div>
+    </div>
+    
+    <div id="page2" class="content">
+        <div class="section">
+            <img src="revolution.jpg" alt="Зображення революції 1917–1923 років">
+            <h2>Революції 1917–1923 років</h2>
+            <p>
+                Період революцій після Першої світової війни позначився крахом монархій та змінами у політичній системі. 
+                Найбільше впливу мала Жовтнева революція в Росії, яка започаткувала еру радянської влади.
+            </p>
+            <p>
+                В Європі відбувалися масові страйки робітників, які вимагали кращих умов праці, прав та зарплат. 
+                У Німеччині Листопадова революція завершила існування монархії.
+            </p>
+        </div>
+    </div>
+    
+    <div id="page3" class="content">
+        <div class="section">
+            <img src="versailles.jpg" alt="Зображення Версальського договору">
+            <h2>Версальський договір</h2>
+            <p>
+                Версальський договір 1919 року став ключовим документом після завершення війни. 
+                Він змінив мапу Європи, обмеживши потужність Німеччини та створивши нові незалежні держави. 
+            </p>
+            <p>
+                Території, як Ельзас і Лотарингія, були повернуті Франції, а Польща отримала вихід до Балтійського моря. 
+                Договір викликав гнів у Німеччині, що створило передумови для політичної радикалізації.
+            </p>
+        </div>
+    </div>
+    
+    <div id="page4" class="content">
+        <div class="section">
+            <img src="nazism2.jpg" alt="Інше зображення нацизму">
+            <img src="nazism3.jpg" alt="Третє зображення нацизму">
+            <h2>Підйом нацизму</h2>
+            <p>
+                Після Першої світової війни у Німеччині виникла ідея реваншу за приниження Версальським договором. 
+                Це стало основою для підйому нацистської партії. 
+            </p>
+            <p>
+                Адольф Гітлер використав економічні труднощі, щоб залучити підтримку населення, обіцяючи 
+                повернути Німеччину до її колишньої слави. Політика нацизму базувалася на ідеях расової переваги 
+                та відновлення територій.
+            </p>
+        </div>
+    </div>
+
+    <div id="page5" class="content">
+        <div class="section">
+            <img src="world_war.jpg" alt="Зображення наслідків Першої світової війни">
+            <h2>Світ після війни</h2>
+            <p>
+                Перша світова війна змінила політичний та економічний ландшафт світу. 
+                Були створені нові незалежні держави, зруйновано імперії. 
+            </p>
+            <p>
+                У Європі Ліга Націй намагалася забезпечити мир, але внутрішні конфлікти та економічні кризи 
+                призвели до нових протистоянь. Це стало прелюдією до Другої світової війни.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        let currentPage = 1;
+        const totalPages = 5;
+
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.content');
+            pages.forEach(page => page.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
+        }
+
+        function nextPage() {
+            currentPage = (currentPage % totalPages) + 1;
+            showPage('page' + currentPage);
+        }
+
+        function previousPage() {
+            currentPage = (currentPage - 2 + totalPages) % totalPages + 1;
+            showPage('page' + currentPage);
+        }
+
+        // Event listener for keyboard arrows
+        window.addEventListener('keydown', function(event) {
+            if (event.key === 'ArrowRight') {
+                nextPage();
+            } else if (event.key === 'ArrowLeft') {
+                previousPage();
+            }
+        });
+
+        // Initial page load
+        showPage('page1');
+    </script>
+</body>
+</html>
